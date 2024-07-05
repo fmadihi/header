@@ -1,0 +1,22 @@
+* {
+    margin : 0;
+    padding: 0;
+}
+
+@mixin wh($width:100%, $height:auto) {
+    width : $width;
+    height: $height;
+}
+
+@mixin bg($bg) {
+    background-color: $bg;
+}
+
+@mixin padding($padding-top:0, $padding-right:0, $padding-bottom:0, $padding-left:0, $bx-sizing:border-box) {
+    padding   : $padding-top $padding-right $padding-bottom $padding-left;
+    box-sizing: $bx-sizing;
+}
+@mixin fonts($font-size){
+font-size: $font-size;
+
+}

@@ -1,0 +1,150 @@
+@import "variables";
+
+body {
+    >header {
+        @include wh;
+        @include bg(rgb(107, 208, 107));
+        @include padding(10px, 100px, 50px, 100px);
+
+        >section.top-header {
+            @include wh;
+            display        : flex;
+            flex-direction : row-reverse;
+            justify-content: space-around;
+            align-content  : baseline;
+            align-items    : center;
+
+            >div>h1 {
+                text-shadow: 3px 3px 5px yellow, 5px 5px 5px red;
+                @include fonts(55px);
+                color: rgb(132, 132, 255);
+            }
+
+            >div:nth-of-type(2) {
+                flex-basis: 100%;
+
+                >nav>ul {
+                    display        : flex;
+                    flex-direction : row-reverse;
+                    list-style-type: none;
+                    justify-content: flex-start;
+                    margin-right   : 40px;
+
+                    >li {
+                        margin-left: 15px;
+                        @include fonts(18px);
+
+                        >a {
+                            text-decoration: none;
+                            display        : block;
+                            color          : rgb(255, 255, 255);
+                            transition     : all 300ms linear;
+
+                            &:hover {
+                                color      : rgb(140, 0, 255);
+                                text-shadow: 0px 3px 5px rgb(255, 183, 0);
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            >div:nth-of-type(3) {
+                width          : 100%;
+                display        : flex;
+                flex-direction : row-reverse;
+                justify-content: flex-end;
+                align-items    : center;
+
+                >a {
+                    line-height: 40px;
+                    @include fonts(15px);
+                    margin-right   : 8px;
+                    text-decoration: none;
+                    color          : rgb(255, 255, 255);
+                    transition     : all 300ms linear;
+
+                    &:hover {
+                        color      : rgb(140, 0, 255);
+                        text-shadow: 0px 3px 5px rgb(255, 183, 0);
+                    }
+                }
+
+                >a:nth-of-type(1) {
+                    @include wh(130px, 40px);
+                    border       : 2px solid white;
+                    border-radius: 5px;
+                    text-align   : center;
+
+                    >i {
+                        margin-left: 5px;
+                    }
+
+                    &:hover {
+                        border-color: rgb(140, 0, 255);
+                    }
+                }
+            }
+        }
+
+        >section.bottom-header {
+            display        : flex;
+            flex-direction : row-reverse;
+            justify-content: space-between;
+            align-items    : center;
+            margin-top     : 30px;
+
+            >div:nth-of-type(1) {
+                display        : flex;
+                flex-direction : column;
+                justify-content: flex-start;
+                align-items    : flex-end;
+                align-content  : space-evenly;
+
+                >h2 {
+                    margin-bottom: 15px;
+                    @include fonts(35px);
+                    color: orangered;
+                    >span{
+                        color: white;
+                    }
+                }
+
+                >ul {
+                    >li {
+                        direction    : rtl;
+                        margin-right : 15px;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                div {
+                    >button {
+                        @include wh(140px, 40px);
+                        align-items  : baseline;
+                        border-radius: 10px;
+                        border       : 1px solid rgb(255, 98, 0);
+                        color        : rgb(255, 98, 0);
+                        @include bg(rgba(255, 0, 0, 0));
+                        @include fonts(18px);
+                        margin-left: 5px;
+                        transition: all 300ms linear;
+                        &:hover{
+                            box-shadow: 5px 5px 5px brown;
+                        }
+                    }
+                    >button:nth-of-type(2){
+                        @include bg(rgb(255, 98, 0));
+                        color: white;
+                    }
+                }
+            }
+
+            >div>img {
+                width        : 480px;
+                border-radius: 50%;
+            }
+        }
+    }
+}

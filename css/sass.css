@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body>header {
+  width: 100%;
+  height: auto;
+  background-color: #6bd06b;
+  padding: 10px 100px 50px 100px;
+  box-sizing: border-box;
+}
+
+body>header>section.top-header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-content: baseline;
+  align-items: center;
+}
+
+body>header>section.top-header>div>h1 {
+  text-shadow: 3px 3px 5px yellow, 5px 5px 5px red;
+  font-size: 55px;
+  color: #8484ff;
+}
+
+body>header>section.top-header>div:nth-of-type(2) {
+  flex-basis: 100%;
+}
+
+body>header>section.top-header>div:nth-of-type(2)>nav>ul {
+  display: flex;
+  flex-direction: row-reverse;
+  list-style-type: none;
+  justify-content: flex-start;
+  margin-right: 40px;
+}
+
+body>header>section.top-header>div:nth-of-type(2)>nav>ul>li {
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+body>header>section.top-header>div:nth-of-type(2)>nav>ul>li>a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  transition: all 300ms linear;
+}
+
+body>header>section.top-header>div:nth-of-type(2)>nav>ul>li>a:hover {
+  color: #8c00ff;
+  text-shadow: 0px 3px 5px #ffb700;
+}
+
+body>header>section.top-header>div:nth-of-type(3) {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+body>header>section.top-header>div:nth-of-type(3)>a {
+  line-height: 40px;
+  font-size: 15px;
+  margin-right: 8px;
+  text-decoration: none;
+  color: white;
+  transition: all 300ms linear;
+}
+
+body>header>section.top-header>div:nth-of-type(3)>a:hover {
+  color: #8c00ff;
+  text-shadow: 0px 3px 5px #ffb700;
+}
+
+body>header>section.top-header>div:nth-of-type(3)>a:nth-of-type(1) {
+  width: 130px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+body>header>section.top-header>div:nth-of-type(3)>a:nth-of-type(1)>i {
+  margin-left: 5px;
+}
+
+body>header>section.top-header>div:nth-of-type(3)>a:nth-of-type(1):hover {
+  border-color: #8c00ff;
+}
+
+body>header>section.bottom-header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+body>header>section.bottom-header>div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: space-evenly;
+}
+
+body>header>section.bottom-header>div:nth-of-type(1)>h2 {
+  margin-bottom: 15px;
+  font-size: 35px;
+  color: orangered;
+}
+
+body>header>section.bottom-header>div:nth-of-type(1)>h2>span {
+  color: white;
+}
+
+body>header>section.bottom-header>div:nth-of-type(1)>ul>li {
+  direction: rtl;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+body>header>section.bottom-header>div:nth-of-type(1) div>button {
+  width: 140px;
+  height: 40px;
+  align-items: baseline;
+  border-radius: 10px;
+  border: 1px solid #ff6200;
+  color: #ff6200;
+  background-color: rgba(255, 0, 0, 0);
+  font-size: 18px;
+  margin-left: 5px;
+  transition: all 300ms linear;
+}
+
+body>header>section.bottom-header>div:nth-of-type(1) div>button:hover {
+  box-shadow: 5px 5px 5px brown;
+}
+
+body>header>section.bottom-header>div:nth-of-type(1) div>button:nth-of-type(2) {
+  background-color: #ff6200;
+  color: white;
+}
+
+body>header>section.bottom-header>div>img {
+  width: 480px;
+  border-radius: 50%;
+}
